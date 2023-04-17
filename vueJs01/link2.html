@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link 2 Vue js examples</title>
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="deneme2">
+        {{title}}: <br>
+        <p v-html=link>
+            {{link}}
+        </p>
+    </div>
+
+    <script>
+        new Vue({
+            el: "#deneme2",
+            data:{
+                title: "Google Yonlendirme",
+                link : '<a href="https://www.google.com.tr" target="_blank" rel="noopener noreferrer">Siteye Git</a>'
+            }
+        })
+       
+    </script>
+    
+</body>
+</html>
